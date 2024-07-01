@@ -1,0 +1,6 @@
+<% if @included && @english == true %>
+  <p><%= "Félicitations ! #{@word} est un mot valide." %></p>
+<% else %>
+  <p><%= "Désolé, mais #{@word} n'est pas un mot anglais valide." %></p>
+<% end %>
+<%= link_to 'Play again', new_path %>
